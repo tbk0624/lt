@@ -1,0 +1,267 @@
+/*----------------------Main Stylesheet----------------------*/
+body {
+	background-image: url("../img/sidewalk.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 18px;
+	overflow: auto;
+}
+h3 {
+	text-align: center;
+	color: #00303f;
+}
+p {
+	padding: 2%;
+	color: #00303f;
+}
+img {
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+#wrapper {
+	margin: 0 auto;
+	max-width: 1020px;
+	width: 96%;
+	background-color: rgba(202, 228, 219, 0.7);
+	border: 1px solid #00303f;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 0px rgba(12, 3, 25, 0.8);
+}
+.brbreak1 , .brbreak2 {
+	display: none;
+}
+#callout {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+#callout p {
+	text-align: center;
+	font-size: 18px;
+	padding: 0;
+}
+#callout p a {
+	color: #004e66;
+	text-decoration: none;
+}
+nav {
+	width: 100%;
+	min-height: auto;
+	padding: 0;
+	text-align: center;
+}
+.navBorder {
+	width: 100%;
+	border-left: 2px solid #00303f;
+	border-right: 2px solid #00303f;
+	border-top: 2px solid #00303f;
+	border-top-right-radius: 22px;
+	border-top-left-radius: 22px;
+	overflow: hidden;
+}
+.niceNav {
+	border-left: 1px solid #004e66;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+nav ul li {
+	float: left;
+	width: 20%;
+}
+nav ul li a {
+	background: #00303f;
+	display: block;
+	padding: 4% 2%;
+	font-weight: bold;
+	font-size: 18px;
+	color: #7a9d96;
+	text-decoration: none;
+	text-align: center;
+}
+nav ul li a:hover, nav ul li.active a {
+	background-color: #7a9d96;
+	color: #00303f;
+}
+.banner img {
+	width: 100%;
+	border-top: 2px solid #00303f;
+	border-bottom: 2px solid #00303f;
+	overflow: hidden;
+}
+.slogan {
+	padding: 2% 5%;
+}
+.clearfix {
+	clear: both;
+}
+.left-col {
+	width: 55%;
+	float: left;
+	margin: -2% 1% 1% 1%;
+}
+.sidebar{
+	width: 40%;
+	float: right;
+	margin: 1%;
+	text-align: center;
+}
+.pave {
+	float: left;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	padding: 1%;
+}
+.section {
+	width: 29%;
+	float: left;
+	margin: 2% 2%;
+	text-align: center;
+}
+.smallBorder {
+	border: 2px solid #00303f;
+	border-radius: 5px;
+	background-color: rgba(202, 228, 219, 0.7);
+}
+footer {
+	background-color: rgba(122, 157, 150, 0.7);
+	margin: 2% auto;
+	max-width: 1020px;
+	width: 96%;
+	overflow: hidden;
+	border: 1px solid #00303f;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 0px rgba(12, 3, 25, 0.8);
+}
+footer p {
+	color: #00303f;;
+	padding: calc(53% - calc((18px + 2%) * 5));
+	margin: 0;
+}
+footer p a {
+	color: #00303f;
+	text-decoration: none;
+}
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+footer ul li {
+	display: inline;
+}
+footer ul li img {
+	height: 50px;
+	vertical-align: middle;
+}
+/*----------------------Contact Form----------------------*/
+.error {
+	color: #FF0000;
+}
+/*----------------------Main Media Queries----------------------*/
+
+@media screen and (max-width: 789px) {
+	body{
+		background-image: url("../img/sidewalkMobile.png");
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	.brbreak1 {
+		display: block;
+	}
+	footer p {
+		padding: 2%;
+	}
+	
+	nav {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.navBorder {
+		width: calc(100% - 3px);
+		display: none;
+	}
+	.niceNav {
+		border: 0;
+	}
+	.burgerNav {
+		display: block;
+		width: 40px;
+		height: 40px;
+		float: left;
+		background: url("../img/menu.png") no-repeat;
+		background-size: 100%;
+		cursor: pointer;
+		margin-left: 5%;
+		margin-top: 18px;
+		margin-right: -20.81916054%;
+	}
+	nav ul {
+		overflow: hidden;
+		background-color: #00303f;
+		height: 0;
+	}
+	nav.open{
+		height: auto;
+	}
+	nav ul li {
+		float: none;
+		text-align: left;
+		margin: 0;
+		width: 100%;
+	}
+	nav ul li a {
+		padding: 10px;
+		font-size: 15px;
+		border-bottom: 1px solid #00303f;
+		display: block;
+		margin: 0;
+	}
+	.left-col {
+		width: 100%;
+	}
+	.sidebar {
+		width: 100%;
+	}
+	.section {
+		width: 100%;
+		float: left;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 478px) {
+	body {
+		font-size: 13px;
+		background-image: url("../img/sidewalkMobile.png");
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+	#callout p {
+		font-size: 13px;
+	}
+	.burgerNav {
+		margin-top: 33px;
+	}
+	nav ul li a {
+		font-size: 13px;
+	}
+	#callout {
+		text-align: right;
+	}
+	.brbreak2 {
+		display: block;
+	}
+	footer ul li img {
+		height: 40px;
+	}
+}
+/*----------------------Estimate Calc Stylesheet----------------------*/
